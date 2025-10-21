@@ -1,0 +1,163 @@
+/* General page styling */
+html, body {
+  height: 100%;         /* full height */
+  margin: 0;            /* remove default spacing */
+  display: flex;
+  flex-direction: column;
+  font-family: 'Special Elite', monospace;
+  background-color: #BFB17C;
+  color: #6A4021;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+
+
+
+/* Header styling */
+header {
+    background-color:#E0A295 ;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+/* Section styling */
+section {
+    margin: 2rem auto;
+    max-width: 600px;
+    background:  #D0E4E2;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Styling for unvisited links */
+a:link {
+  color: pink;
+}
+
+/* Styling for visited links */
+a:visited {
+  color: #E0A295;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #6A4021;
+    color: white;
+}
+
+/* ===== Navigation ===== */
+nav {
+    background: #ffffff;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.nav-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+    padding: 0.75rem 1rem;
+}
+
+.brand {
+    font-weight: 700;
+    margin-right: auto;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.nav a {
+    text-decoration: none;
+    padding: 0.4rem 0.65rem;
+    border-radius: 6px;
+    color: #333;
+}
+
+.nav a:hover {
+    background: #f2f2f2;
+}
+
+.nav a.active {
+    background: #e2b94a;
+    color: #fff;
+}
+
+/* Page container */
+.main {
+    flex: 1;
+    margin: 1rem;
+    max-width: 1000px;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.06);
+}
+
+
+/* Simple utilities */
+h1 { margin-top: 0; }
+
+/* Photos grid example */
+.grid {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 10px 0;
+}
+
+.grid img {
+  height: 180px;
+  border-radius: 10px;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+
+/* Optional aesthetic tweak */
+.grid::-webkit-scrollbar {
+  height: 8px;
+}
+.grid::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+
+/* Recipe cards example */
+.cards {
+    display: grid;
+    grid-template-columns: 1fr; /* force single-column stack */
+    gap: 14px;
+}
+
+.card {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.card h3 {
+    margin: 0 0 0.5rem 0;
+}
+
+/* Footer (optional tweak) */
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  font-size: 0.8rem;   /* small text */
+  padding: 6px 0;      /* thin */
+  margin-top: auto;    /* pushes it to the bottom */
+}
